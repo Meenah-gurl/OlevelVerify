@@ -1,0 +1,19 @@
+{
+    "Computer Science": {
+        "Subjects" : ["Mathematics", "English", "Physics", "Chemistry", "Biology"],
+        "Grades" : ["A1", "B2", "B3", "C3", "C4", "C5", "C6"],
+        "MinCredits" : 5
+    },
+    "Library Science": {
+        "Subjects" : ["Mathematics", "English", "Physics", "Chemistry", "Biology"],
+        "Grades" : ["A1", "B2", "B3", "C3", "C4", "C5", "C6"],
+        "MinCredits" : 5
+    },
+    "Computer Engineering": {
+        "Subjects" : ["Mathematics", "English", "Physics", "Chemistry"],
+        "Grades" : ["A1", "B2", "B3", "C3", "C4", "C5", "C6"],
+        "MinCredits" : 5
+    }
+}
+
+
