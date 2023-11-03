@@ -16,7 +16,7 @@
             <div class="flex items-center flex-shrink-0 text-white mr-6">
                 <img src="images/nekedelogo.png" class="w-44" alt="" srcset="">
             </div>
-            <div class="block lg:hidden md:hidden">
+            <div class="block lg:hidden md:hidden justify-end items-center flex">
                 <button class="nav-toggle flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
                     <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                 </button>
@@ -34,7 +34,7 @@
                     </a>
                 </div>
             </div>
-            <div class="flex justify-end items-end">
+            <div class="lg:flex justify-end items-end hidden">
                 <div class="w-auto bg-white rounded-md px-4 py-2 text-center  ">
                     <a href="#" class="inline-block flex  text-sm  leading-none font-bold text-black  hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0" style="background-color:ffffff ;">Login</a>
                 </div>
@@ -66,7 +66,7 @@
                                     </select>
                                 </div>
                                 <div>
-                                    <label for="" class="mb-2">Course</label>
+                                    <label for="" class="mb-2">Department</label>
                                     <select name="" id="availableDepts" class="w-full  mt-2 bg-white border border-white rounded-md py-2 px-4" itemid="department"></select>
                                 </div>
                             </div>
@@ -234,11 +234,11 @@
                 <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
                     <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                         <div class="sm:flex sm:items-start">
-                            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-green-100 sm:mx-0">
+                            <div id="icon-div" class="text-center">
                                 <!-- <svg class="h-6 w-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg> -->
-                                <span id="icon-div" class="block"></span>
+                                <!-- <span id="icon-div" class="block"></span> -->
                             </div>
                             <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                                 <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
@@ -262,11 +262,25 @@
         </div>
 
         <!-- footer -->
-        <div>
-            footer
+        <div class="bg-white py-8 px-4 shadow-lg border">
+            <div class="flex justify-between">
+                <span class="font-medium text-lg">&copy; 2023 - Federal Polytechnic Nekede</span>
+                <span class="font-medium text-lg">Powered by FPNO - ICT</span>
+            </div>
         </div>
         <script src="js/jquery.min.js"></script>
         <script type="module" src="js/checker.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Add toggle
+                const navButton = document.querySelector('.nav-toggle');
+                const navMenu = document.querySelector('.nav-menu');
+            
+                navButton.addEventListener('click', () => {
+                   navMenu.classList.toggle('hidden');
+                });
+            });
+        </script>
     </body>
 </html>
 
